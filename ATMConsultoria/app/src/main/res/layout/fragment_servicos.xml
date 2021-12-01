@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ui.servicos.ServicosFragment">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sistema de gestão de qualidade"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet maximus dui, id suscipit neque posuere quis. Integer molestie vel justo et vestibulum. Proin sed tellus in nibh porttitor molestie vestibulum eget lorem. Nam sed justo vitae ante lobortis consectetur sit amet molestie ex. Quisque blandit dolor malesuada, porta felis a, cursus nulla. "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="Indicadores"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet maximus dui, id suscipit neque posuere quis. Integer molestie vel justo et vestibulum. Proin sed tellus in nibh porttitor molestie vestibulum eget lorem. Nam sed justo vitae ante lobortis consectetur sit amet molestie ex. Quisque blandit dolor malesuada, porta felis a, cursus nulla. " />
+</LinearLayout>

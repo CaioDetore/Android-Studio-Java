@@ -28,7 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
 //      define layout
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
-//        RecyclerView.LayoutManager layoutManager1 = new GridLayoutManager(this, 1);
+        RecyclerView.LayoutManager layoutManager1 = new GridLayoutManager(this, 1);
+//      LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+//      layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         recyclerPostagem.setLayoutManager(layoutManager);
 
 //      define adapter
