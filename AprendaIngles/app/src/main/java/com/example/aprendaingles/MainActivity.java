@@ -1,19 +1,18 @@
-package com.example.abas;
+package com.example.aprendaingles;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
-import com.example.abas.Fragment.EmAltaFragment;
-import com.example.abas.Fragment.HomeFragment;
-import com.example.abas.Fragment.InscricoesFragment;
+import com.example.aprendaingles.fragments.BichosFragment;
+import com.example.aprendaingles.fragments.NumerosFragment;
+import com.example.aprendaingles.fragments.VogaisFragment;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
 
 public class MainActivity extends AppCompatActivity {
-
     private SmartTabLayout smartTabLayout;
     private ViewPager viewPager;
 
@@ -22,20 +21,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        smartTabLayout = findViewById(R.id.viewPagerTab);
-        viewPager = findViewById( R.id.viewpager );
-
         getSupportActionBar().setElevation(0);
 
-        //Configurar adapter para abas
+        smartTabLayout = findViewById( R.id.viewPagerTab );
+        viewPager = findViewById( R.id.viewPager );
+
         FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(),
                 FragmentPagerItems.with(this)
-                        .add("Home", HomeFragment.class)
-                        .add("Inscrições", InscricoesFragment.class)
-                        .add("Em alta", EmAltaFragment.class)
-                .create()
-        );
+                .add("Bichos", BichosFragment.class)
+                .add("Números", NumerosFragment.class)
+                .add("Vogais", VogaisFragment.class)
+                .create());
+
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
+        viewPager.setAdapter(adapter);
 
         viewPager.setAdapter( adapter );
         smartTabLayout.setViewPager( viewPager );
