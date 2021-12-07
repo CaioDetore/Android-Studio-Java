@@ -1,0 +1,122 @@
+// SCROLLVIEW
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    >
+
+
+// LAMBDA 
+nomeView.setOnClickListener(v -> { });
+		==
+nomeView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+
+// LISTAS JAVA
+	definir layout -> adapter -> holders -> objetos -> lista
+// criar array
+private datatype[] nomeLista = {itens}
+
+// criar adptador e adicionar na lista
+ArrayAdapter<String> nomeAdaptador = new ArrayAdapter<String>(context, layout, id, nomeLista); // itens = array com os itens
+nomeLista.setAdapter(nomeAdaptador);
+
+
+// RECYCLER VIEW
+
+// Criando adapter para o recycler view
+	public class Adapter extends RecyclerView.Adapter<MyViewHolder> {
+	    @NonNull
+	    @Override
+	    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+	    	
+		View itemLista = LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_lista, parent, false); 
+	     	// adapter_lista = arquivo xml com o design da view
+		return new MyViewHolder(itemLista);
+	    }
+
+	    @Override
+	    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+		// aqui é onde insere os valores no holder como no exemplo abaixo	    
+		holder.titulo.setText("Título texto");
+		holder.genero.setText("Comédia");
+		holder.ano.setText("2021");
+
+	    }
+
+	    @Override
+	    public int getItemCount() {
+		// aqui é a contagem de quantos itens vão aparecer no recycler view    	
+		return 5;
+	    }
+	}
+
+// Na mainActivity
+        recyclerView = findViewById(R.id.recyclerView);
+//        Configurar adapter
+        Adapter adapter = new Adapter();
+
+//        Configurar recyclerView
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setAdapter(adapter);
+        
+       
+// LAYOUTS CARD/RECYCLER VIEW
+
+// VERTICAL 
+	RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+	recyclerPostagem.setLayoutManager(layoutManager);
+
+// HORIZONTAL
+	LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+	layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+	recyclerPostagem.setLayoutManager(layoutManager);
+	
+// GRID
+	RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this, 1);
+	recyclerPostagem.setLayoutManager(layoutManager);
+	
+// SOBRE 
+	https://github.com/medyo/android-about-page	
+	
+// ABAS
+	https://github.com/ogaclejapan/SmartTabLayout/
+	
+	implementation 'com.ogaclejapan.smarttablayout:library:2.0.0@aar'
+	implementation 'com.ogaclejapan.smarttablayout:utils-v4:2.0.0@aar'
+	
+	/Configurar adapter para abas
+        FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
+                getSupportFragmentManager(),
+                FragmentPagerItems.with(this)
+                        .add("", Fragment.class)
+                        .add("", Fragment.class)
+                        .add("Emalta", Fragment.class)
+                .create()
+        );
+
+        viewPager.setAdapter( adapter );
+        smartTabLayout.setViewPager( viewPager );
+        
+// SLIDERS
+	https://github.com/TangoAgency/material-intro-screen  
+	
+// SETTER AND GETTERS
+	compileOnly 'org.projectlombok:lombok:1.18.20'
+	annotationProcessor 'org.projectlombok:lombok:1.18.20'
+	
+// FLOATING BUTTON MENU
+	https://github.com/oguzbilgener/CircularFloatingActionMenu
+	https://github.com/zendesk/android-floating-action-button
+	https://github.com/Clans/FloatingActionButton                   // descontinuado
+
