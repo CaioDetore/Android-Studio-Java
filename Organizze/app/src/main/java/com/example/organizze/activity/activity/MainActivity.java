@@ -2,6 +2,7 @@ package com.example.organizze.activity.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 
 import com.example.organizze.R;
@@ -61,8 +62,12 @@ public class MainActivity extends IntroActivity {
 
     public void verificarUsuarioLogado(){
         auth = ConfiguracaoFirebase.getFirebaseAutenticacao();
+//        auth.signOut();
         if ( auth.getCurrentUser() != null ) {
             startActivity(new Intent(this, PrincipalActivity.class));
         }
     }
+
+
+
 }

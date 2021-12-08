@@ -10,9 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Organizze">
         <activity
+            android:name=".activity.activity.DespesasActivity"
+            android:theme="@style/despesaTheme"
+            android:exported="false" />
+        <activity
+            android:name=".activity.activity.ReceitasActivity"
+            android:theme="@style/receitaTheme"
+            android:exported="false" />
+        <activity
             android:name=".activity.activity.PrincipalActivity"
             android:exported="false"
-            android:label="@string/title_activity_prinicipal"
+            android:label="@string/title_activity_principal"
             android:theme="@style/Theme.Organizze.NoActionBar" />
         <activity
             android:name=".activity.activity.CadastroActivity"

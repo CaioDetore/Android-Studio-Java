@@ -8,7 +8,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <!-- custom -->
-    <color name="azul_500">#01C7D2</color>
-    <color name="azul_700">#00b2bc</color>
-    <color name="vermelho_200">#ff706a</color>
+    <color name="azul_500">#00E6F3</color>
+    <color name="azul_700">#00C6D1</color>
+    <color name="vermelho_200">#FF706A</color>
+    <color name="vermelho_500">#ED6A64</color>
+    <!-- cores receitas -->
+    <color name="ciano_500">#03FFC0</color>
+    <color name="ciano_700">#01ECAD</color>
+
 </resources>

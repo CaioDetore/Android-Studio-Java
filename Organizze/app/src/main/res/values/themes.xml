@@ -12,7 +12,28 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
     </style>
+    <!-- TEMA DESPESAS -->
+    <style name="despesaTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/vermelho_200</item>
+        <item name="colorPrimaryDark">@color/vermelho_500</item>
+        <item name="colorAccent">@color/vermelho_200</item>
+    </style>
+    <!-- TEMA RECEITAS -->
+    <style name="receitaTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/ciano_500</item>
+        <item name="colorPrimaryDark">@color/ciano_700</item>
+        <item name="colorAccent">@color/ciano_500</item>
+        <item name="colorSecondary">@color/ciano_500</item>
+        <item name="colorSecondaryVariant">@color/ciano_500</item>
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
+
 
     <style name="Theme.Organizze.NoActionBar">
         <item name="windowActionBar">false</item>
