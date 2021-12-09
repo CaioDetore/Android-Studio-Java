@@ -21,6 +21,7 @@
         <item name="colorPrimary">@color/vermelho_200</item>
         <item name="colorPrimaryDark">@color/vermelho_500</item>
         <item name="colorAccent">@color/vermelho_200</item>
+        <item name="colorOnSecondary">@color/white</item>
     </style>
     <!-- TEMA RECEITAS -->
     <style name="receitaTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">

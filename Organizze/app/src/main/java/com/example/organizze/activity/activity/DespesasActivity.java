@@ -1,6 +1,7 @@
 package com.example.organizze.activity.activity;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -48,21 +49,28 @@ public class DespesasActivity extends AppCompatActivity {
 
     public void salvarDespesa(View view){
         if ( validarCamposDespesa()) {
+            try {
+                mov = new Movimentacao();
+                String data = edtData.getText().toString();
+                Double valorRecuperado = Double.parseDouble(edtValor.getText().toString());
 
-            mov = new Movimentacao();
-            String data = edtData.getText().toString();
-            Double valorRecuperado = Double.parseDouble(edtValor.getText().toString());
+                mov.setValor( valorRecuperado );
+                mov.setCategoria( edtCategoria.getText().toString() );
+                mov.setDescricao( edtDescricao.getText().toString() );
+                mov.setData( data );
+                mov.setTipo( "d" ); // "d" de despesa
 
-            mov.setValor( valorRecuperado );
-            mov.setCategoria( edtCategoria.getText().toString() );
-            mov.setDescricao( edtDescricao.getText().toString() );
-            mov.setData( data );
-            mov.setTipo( "d" ); // "d" de despesa
+                despesaAtualizada = despesaTotal + valorRecuperado;
+                atualizarDespesa( despesaAtualizada );
 
-            despesaAtualizada = despesaTotal + valorRecuperado;
-            atualizarDespesa( despesaAtualizada );
+                mov.salvar( data );
+                Toast.makeText(DespesasActivity.this, "Registrado com sucesso!", Toast.LENGTH_SHORT).show();
+            } catch (Exception e) {
+                Toast.makeText(DespesasActivity.this, "Erro ao registrar despesa..." + e.getMessage(), Toast.LENGTH_LONG).show();
+            }
 
-            mov.salvar( data );
+            finish();
+
         }
 
     }

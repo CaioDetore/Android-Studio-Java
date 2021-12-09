@@ -97,9 +97,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:clickable="true"
+        android:onClick="salvarDespesa"
+        app:backgroundTint="@color/vermelho_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_check_24"
-        android:onClick="salvarDespesa"/>
+        app:srcCompat="@drawable/ic_check_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>
