@@ -86,6 +86,18 @@ nomeLista.setAdapter(nomeAdaptador);
 	RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this, 1);
 	recyclerPostagem.setLayoutManager(layoutManager);
 	
+// DATA ATUAL
+	com essa função é possível criar a data atual e formata-la do jeito desejado
+	
+    public static String dataAtual(){
+        long date = System.currentTimeMillis();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy hh:mm");
+        String dataString = simpleDateFormat.format(date);
+        return dataString;
+    }
+    
+    obs: chamar a função para recuperar a data
+	
 // SOBRE 
 	https://github.com/medyo/android-about-page	
 	
@@ -119,4 +131,8 @@ nomeLista.setAdapter(nomeAdaptador);
 	https://github.com/oguzbilgener/CircularFloatingActionMenu
 	https://github.com/zendesk/android-floating-action-button
 	https://github.com/Clans/FloatingActionButton                   // descontinuado
+	
+// Calendario diferenciado
+	https://github.com/prolificinteractive/material-calendarview
+	implementation 'com.github.prolificinteractive:material-calendarview:2.0.0'
 
