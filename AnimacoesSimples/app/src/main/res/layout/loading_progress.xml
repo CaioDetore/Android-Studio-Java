@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/loading_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/loading_txtCarregando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="Carregando"
+        android:textStyle="bold" />
+
+    <com.bhargavms.dotloader.DotLoader
+        android:id="@+id/text_dot_loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:foregroundGravity="center"
+        app:color_array="@array/dot_colors"
+        app:dot_radius="4dp"
+        app:number_of_dots="3" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:background="#171b23" />
+
+</LinearLayout>

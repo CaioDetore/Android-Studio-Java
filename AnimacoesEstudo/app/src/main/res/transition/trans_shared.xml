@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--  Anima a mudança em layouts agrupados de uma view  -->
+    <changeBounds/>
+<!--  Anima a escala e rotação de uma view  -->
+    <changeTransform/>
+<!--  Anima a escola e rotação de uma imagem  -->
+    <changeImageTransform/>
+
+</transitionSet>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Animação de transição de activitys -->
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <explode android:duration="500"/>-->
+<!--    <slide android:duration="500"/>-->
+<!--    <recolor android:duration="500"/>-->
+</transitionSet>

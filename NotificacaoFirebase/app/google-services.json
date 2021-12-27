@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "863964611291",
+    "project_id": "notificacao-firebase-5db3f",
+    "storage_bucket": "notificacao-firebase-5db3f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863964611291:android:4d1071bc09b31214a7c2fe",
+        "android_client_info": {
+          "package_name": "com.caiodetore.notificacaofirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863964611291-8uk4b47pmea31gvplar5g89fd8jsiqmb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.caiodetore.notificacaofirebase",
+            "certificate_hash": "46a2cb99633a5bd16ab7874d48758dc692ad95b9"
+          }
+        },
+        {
+          "client_id": "863964611291-r152a6p1rdjv01lns9462rpei6nq2er1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpyljgsU5-ij_AZ49Dn0pp3QqkYy0RMNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863964611291-r152a6p1rdjv01lns9462rpei6nq2er1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
