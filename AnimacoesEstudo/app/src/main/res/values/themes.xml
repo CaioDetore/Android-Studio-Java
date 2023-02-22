@@ -16,6 +16,7 @@
         <!-- isso é para ativar as transições -->
         <item name="android:windowActivityTransitions">true</item>
         <!-- configurando transições de entrada e saida das acitivitys -->
+        <!-- só são ativadas se existir um bundle no startActivity (ver MainActivity.openShared) -->
 <!--        <item name="android:windowEnterTransition">@transition/trans_anim</item>-->
 <!--        <item name="android:windowExitTransition">@transition/trans_anim</item>-->
 
@@ -38,10 +39,10 @@
     </style>
 
     <style name="ActivityAnim" parent="@android:style/Animation.Activity">
-<!--        <item name="android:activityOpenEnterAnimation">@anim/slide_in</item>-->
-<!--        <item name="android:activityCloseEnterAnimation">@anim/slide_in</item>-->
-<!--        <item name="android:activityOpenExitAnimation">@anim/slide_out</item>-->
-<!--        <item name="android:activityCloseExitAnimation">@anim/slide_out</item>-->
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out</item>
     </style>
 
 </resources>
